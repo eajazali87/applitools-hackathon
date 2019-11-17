@@ -22,34 +22,11 @@
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.testautomationguru.ocular</groupId>
-            <artifactId>ocular</artifactId>
-            <version>1.0.0.Alpha</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
-        <dependency>
-            <groupId>ru.yandex.qatools.ashot</groupId>
-            <artifactId>ashot</artifactId>
-            <version>1.5.4</version>
-            <scope>compile</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.assertthat/selenium-shutterbug -->
-        <dependency>
-            <groupId>com.assertthat</groupId>
-            <artifactId>selenium-shutterbug</artifactId>
-            <version>0.9.3</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/com.applitools/eyes-selenium-java3 -->
         <dependency>
             <groupId>com.applitools</groupId>
             <artifactId>eyes-selenium-java3</artifactId>
             <version>3.158.5</version>
         </dependency>
-
-
-
     </dependencies>
 </project>
