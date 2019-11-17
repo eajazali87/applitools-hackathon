@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="VisualAI Tests suite V2" verbose="1" >
+    <test name="VisualAITests V2" >
+
+        <classes>
+            <class name="VisualAITests"/>
+        </classes>
+    </test>
+</suite>
