@@ -50,19 +50,7 @@ public class TraditionalTests {
 
   public String suiteName = "", url = "";
 
-  @BeforeClass
-  public void beforeClass() {
-    System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
-    driver = new ChromeDriver();
-    testUtil = new TestUtilities(driver);
-  }
-
-  @BeforeMethod
-  public void beforeMethod() {
-    testUtil.getUrl(url);
-  }
-
-  @Test(groups = "Hackathon")
+  @Test
   public void loginPageUIElementsTest() {
     testUtil.getUrl(url);
     //verify logo exists and if its clickable
@@ -110,7 +98,7 @@ public class TraditionalTests {
     };
   }
 
-  @Test(groups = "Hackathon", dataProvider = "data-provider")
+  @Test(dataProvider = "data-provider")
   public void userLoginDataDrivenTest(String uname, String pwd, String alertBanner) {
     //enter username and password
     testUtil.sendKeys((userNameInputField), uname);
@@ -127,7 +115,7 @@ public class TraditionalTests {
     }
   }
 
-  @Test(groups = "Hackathon")
+  @Test
   public void tableSortTest() {
     Map<String, String[]> tableValues = new LinkedHashMap<String, String[]>();
     String[] keys = {"- 320.00 USD", "- 244.00 USD", "+ 17.99 USD", "+ 340.00 USD", "+ 952.23 USD",
@@ -185,7 +173,7 @@ public class TraditionalTests {
     }
   }
 
-  @Test(groups = "Hackathon")
+  @Test
   public void canvasChartTest() throws Exception {
     driver.manage().window().setSize(new Dimension(800, 480));
 
@@ -213,7 +201,7 @@ public class TraditionalTests {
     Assert.assertTrue(validateDataChart, "The Data Chart Validation is incorrect");
   }
 
-  @Test(groups = "Hackathon")
+  @Test
   public void dynamicContentTest() {
     if (suiteName.contains("V2")) {
       testUtil.getUrl("https://demo.applitools.com/hackathonV2.html?showAd=true");
@@ -248,4 +236,16 @@ public class TraditionalTests {
       url = "https://demo.applitools.com/hackathon.html";
     }
   }
+  @BeforeClass
+  public void beforeClass() {
+    System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
+    driver = new ChromeDriver();
+    testUtil = new TestUtilities(driver);
+  }
+
+  @BeforeMethod
+  public void beforeMethod() {
+    testUtil.getUrl(url);
+  }
+
 }

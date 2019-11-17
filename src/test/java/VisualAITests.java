@@ -37,9 +37,9 @@ public class VisualAITests {
         {"", "", "Both Username and Password must be present",
             "Login Test - Both username and password fields is empty"},
         //empty username and password
-        {"testuname", "", "Password must be present", "Login Test - username is empty"},
+        {"testuname", "", "Password must be present", "Login Test - password is empty"},
         //only username and no password
-        {"", "testpwd", "Username must be present", "Login Test - Pwd is empty"},
+        {"", "testpwd", "Username must be present", "Login Test - username is empty"},
         //only password and no username
         {"testuname", "testpwd", "Login Test - Success", "Login Test - Valid username and password"}
         //valid username and password
@@ -64,6 +64,7 @@ public class VisualAITests {
 
   @Test
   public void tableSortTest() {
+    eyes.setForceFullPageScreenshot(true);
     eyes.open(driver, "Table Sort Test", "Amount column sort by ascending Test",
         new RectangleSize(800, 800));
 
