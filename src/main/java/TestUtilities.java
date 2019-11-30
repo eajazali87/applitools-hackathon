@@ -133,7 +133,7 @@ public class TestUtilities {
       double percentage = (avg_different_pixels /
           255) * 100;
       System.out.println("percentage: " + percentage);
-      if (percentage == 0.0) {
+      if ((percentage < 1.0) && (percentage > 0.0)) { // setting a minimal difference
         comparison = true;
       }
     }

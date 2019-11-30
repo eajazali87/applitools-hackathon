@@ -6,28 +6,28 @@
 Install all dependencies from pom.xml:
 ```
 cd  applitools-hackathon
-mvn install -Dmaven.test.skip=true to install
+mvn install -Dmaven.test.skip=true
 ```
 
 ### Run Tests as a maven command
 Run **Traditional** Test Suite
 
   * V1:
-  ```mvn clean test -DsuiteXmlFile=TraditionalTestSuiteV1.xml```
+  ```mvn clean test -Dtest_suite_xml=TraditionalTestSuiteV1.xml```
 
   * V2:
-  ```mvn clean test -DsuiteXmlFile=TraditionalTestSuiteV2.xml```
+  ```mvn clean test -Dtest_suite_xml=TraditionalTestSuiteV2.xml```
 
 Run **VISUAL AI** Test Suite
 
   * V1:
-  ```mvn clean test -DsuiteXmlFile=AIVisualTestSuiteV1.xml```
+  ```mvn clean test -Dtest_suite_xml=AIVisualTestSuiteV1.xml```
 
   * V2:
-  ```mvn clean test -DsuiteXmlFile=AIVisualTestSuiteV2.xml```
+  ```mvn clean test -Dtest_suite_xml=AIVisualTestSuiteV2.xml```
 
 ### Reports:
-Go to ```applitoolshackathon/target/surefire-reports/Surefire\ suite/Surefire\ test.html``` and open the file in a browser
+Go to ```applitoolshackathon/target/surefire-reports/index.html``` and open the file in a browser
 
 ### Tools used:
 Selenium 3 | Browser: Chrome 73+ | Maven | TestNg
