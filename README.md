@@ -5,6 +5,8 @@
 
 Install all dependencies from pom.xml:
 ```
+cd ~
+git clone https://github.com/eajazali87/applitools-hackathon.git
 cd applitools-hackathon
 mvn install -Dmaven.test.skip=true
 ```
