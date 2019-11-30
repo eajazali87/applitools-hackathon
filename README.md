@@ -1,15 +1,15 @@
 # Applitools Hackathon Project
 
-### Pre-requisite:
+## Pre-requisite:
 <a href="https://maven.apache.org/install.html">Maven</a>, <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK</a> installed
 
 Install all dependencies from pom.xml:
 ```
-cd  applitools-hackathon
+cd applitools-hackathon
 mvn install -Dmaven.test.skip=true
 ```
 
-### Run Tests as a maven command
+## Run Tests as a maven command
 Run **Traditional** Test Suite
 
   * V1:
@@ -26,8 +26,8 @@ Run **VISUAL AI** Test Suite
   * V2:
   ```mvn clean test -Dtest_suite_xml=AIVisualTestSuiteV2.xml```
 
-### Reports:
-Go to ```applitoolshackathon/target/surefire-reports/index.html``` and open the file in a browser
+## Reports:
+Go to ```applitools-hackathon/target/surefire-reports/index.html``` and open the file in a browser
 
-### Tools used:
+## Tools used:
 Selenium 3 | Browser: Chrome 73+ | Maven | TestNg
