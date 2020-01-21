@@ -1,4 +1,4 @@
-# Applitools Hackathon Project
+# Applitools Hackathon Project:
 
 ## Pre-requisite:
 <a href="https://maven.apache.org/install.html">Maven</a>, <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK</a> installed
