@@ -33,3 +33,5 @@ Go to ```applitools-hackathon/target/surefire-reports/index.html``` and open the
 
 ## Tools used:
 Selenium 3 | Browser: Chrome 73+ | Maven | TestNg
+
+
